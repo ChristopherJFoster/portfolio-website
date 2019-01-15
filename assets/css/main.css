@@ -2717,6 +2717,31 @@ ul.icons li:last-child {
 
 /* Section/Article */
 
+/* EDITS */
+.github-logo {
+  width: 16rem;
+}
+
+.github-logo-anchor {
+  border: none;
+}
+
+.great-ideas-mobile-screencap {
+  width: 16rem;
+}
+
+.great-ideas-mobile-anchor {
+  border: none;
+}
+
+.google-sheets-script-screencap {
+  width: 16rem;
+}
+
+.google-sheets-script-anchor {
+  border: none;
+}
+
 section.special,
 article.special {
   text-align: center;
@@ -3177,8 +3202,9 @@ table.alt tbody tr td {
   margin: 0 0 0.25em 0;
 }
 
+/* EDITS */
 #header p {
-  font-size: 1.25em;
+  font-size: 2.5rem;
   letter-spacing: -0.025em;
 }
 
@@ -3867,10 +3893,22 @@ body.is-preload #header.alt .logo {
 }
 
 
-/* What I've Learned:
+/*
+
+What I've Learned:
 - The author uses .row like 5 million times.
 - Lots of browswer-specific settings: moz-animation, webkit-animation, ms-animation.
 - I tried to change the background color. I found it in at least two places in the CSS. Changing the color in both places had no dicernable effect on the page. The background color has a gradient effect applied. I'm curious how to change it, but will have to come back to it later.
 - Through this exercise, I learned to use Chrome's webdev tools a bit more effectively. For example, some properties tell you which CSS file, and even which line Chrome thinks the property is set on. Pretty cool!
 - I assigned a class using a capital letter (Lambda-logo). I then forgot that and tried to select the class using lowercase (lambda-logo). It doesn't work, of course, I'll try to use lowercase classes and IDs unless directed otherwise.
+- I found the following:
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+It looks like the universal selector with :before and :after appended. I looked it up and it seems to mean to add {box-sizing: inherit} before and after *, but I'm not sure what that means. Before and after _every_ selector?
+
 */
